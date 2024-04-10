@@ -14,7 +14,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jpeg/,
+        test: /\.jpeg$/,
         type: "asset/resource",
       },
     ],
