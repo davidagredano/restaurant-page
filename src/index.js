@@ -1,6 +1,7 @@
 import Homepage from "./homepage";
 import Menu from "./menu";
 import Contact from "./contact";
+import "./style.css";
 
 const homeBtn = document.querySelector("#home-btn");
 const menuBtn = document.querySelector("#menu-btn");
