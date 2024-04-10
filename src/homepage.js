@@ -2,7 +2,7 @@ import homepageImage from "./homepage.jpeg";
 
 function Headline() {
   const h1 = document.createElement("h1");
-  h1.textContent = "Savor the Delight at David's Maison Gourmet";
+  h1.textContent = "Home";
   return h1;
 }
 
