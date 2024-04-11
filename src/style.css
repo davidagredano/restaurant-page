@@ -39,7 +39,7 @@
   transition: all 0.25s;
 }
 
-h1 {
+.title {
   margin: 0;
   font-size: 6.5rem;
   font-weight: 700;

@@ -3,6 +3,7 @@ import homepageImage from "./homepage.jpeg";
 function Headline() {
   const h1 = document.createElement("h1");
   h1.textContent = "Home";
+  h1.classList.add("title");
   return h1;
 }
 
