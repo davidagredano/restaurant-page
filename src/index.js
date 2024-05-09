@@ -1,4 +1,4 @@
-import Homepage from "./homepage";
+import Homepage from "./home";
 import Menu from "./menu";
 import Contact from "./contact";
 import "./style.css";
