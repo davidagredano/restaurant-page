@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+
+:root {
+  --font-family-primary: "Calistoga", sans-serif;
+  --color-dark: #401c10;
+  --color-primary-light: #fff7eb;
+  --color-primary-dark: #efe1cc;
+  --color-lighten: #fff7eb1a;
+  --max-width-content: 1140px;
+}
+
+header {
+  background: var(--color-primary-dark);
+  padding: 24px 32px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  max-width: var(--max-width-content);
+  gap: 48px;
+  padding: 24px 0;
+  border-radius: 24px;
+  background: var(--color-dark);
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 16px;
+  font: 400 1.5rem/140% var(--font-family-primary);
+  letter-spacing: 0.5px;
+  color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color: var(--color-lighten);
+}
