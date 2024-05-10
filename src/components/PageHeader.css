@@ -1,0 +1,19 @@
+.page-header {
+  display: flex;
+  justify-content: center;
+  padding: 24px var(--px);
+  background-color: var(--color-primary-dark);
+}
+
+.page-title-wrapper {
+  max-width: var(--max-width-content);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 72px 0;
+}
+
+.page-title {
+  font: 6rem/110% var(--font-family-primary);
+  color: var(--color-dark);
+}
