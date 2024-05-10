@@ -10,12 +10,12 @@
   --max-width-content: 1140px;
 }
 
-header {
+.top-navigation {
   background: var(--color-primary-dark);
   padding: 24px 32px;
 }
 
-.nav {
+.main-nav {
   display: flex;
   justify-content: center;
   max-width: var(--max-width-content);
