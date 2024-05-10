@@ -8,11 +8,12 @@
   --color-primary-dark: #efe1cc;
   --color-lighten: #fff7eb1a;
   --max-width-content: 1140px;
+  --px: 32px;
 }
 
 .top-navigation {
   background: var(--color-primary-dark);
-  padding: 24px 32px;
+  padding: 24px var(--px);
   display: flex;
   justify-content: center;
 }
