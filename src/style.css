@@ -13,11 +13,14 @@
 .top-navigation {
   background: var(--color-primary-dark);
   padding: 24px 32px;
+  display: flex;
+  justify-content: center;
 }
 
 .main-nav {
   display: flex;
   justify-content: center;
+  flex: 1;
   max-width: var(--max-width-content);
   gap: 48px;
   padding: 24px 0;
