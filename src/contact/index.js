@@ -1,6 +1,7 @@
+import PageHeader from "../components/PageHeader";
+
 export default function Contact() {
-  const element = document.createElement("h1");
-  element.textContent = "Contact";
-  element.classList.add("title");
-  return element;
+  const fragment = new DocumentFragment();
+  fragment.appendChild(PageHeader("Contact"));
+  return fragment;
 }
