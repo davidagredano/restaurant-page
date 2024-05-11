@@ -13,7 +13,7 @@
 
 .top-navigation {
   background: var(--color-primary-dark);
-  padding: 24px var(--px);
+  padding: 24px var(--px) 0;
   display: flex;
   justify-content: center;
 }

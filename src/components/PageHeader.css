@@ -1,7 +1,7 @@
 .page-header {
   display: flex;
   justify-content: center;
-  padding: 24px var(--px);
+  padding: 0 var(--px);
   background-color: var(--color-primary-dark);
 }
 
@@ -10,10 +10,11 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  padding: 72px 0;
+  padding: 120px 0;
 }
 
 .page-title {
   font: 6rem/110% var(--font-family-primary);
   color: var(--color-dark);
+  margin: 0;
 }
