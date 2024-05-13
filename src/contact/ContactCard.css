@@ -1,0 +1,27 @@
+.contact-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-card__heading {
+  margin: 0;
+  font: 2.813rem/1.25em var(--font-family-primary);
+  text-align: center;
+  color: var(--color-dark);
+}
+
+.contact-card__text {
+  margin: 0;
+  font: 1.25rem/1.25em var(--font-family-secondary);
+  text-align: center;
+  color: var(--color-dark);
+}
