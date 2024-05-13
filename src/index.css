@@ -7,10 +7,17 @@
   --font-family-secondary: "Inter", sans-serif;
   --color-dark: #401c10;
   --color-primary-light: #fff7eb;
+  --color-primary-medium: #f5ebdc;
   --color-primary-dark: #efe1cc;
   --color-lighten: #fff7eb1a;
   --max-width-content: 1140px;
   --px: 32px;
+  --py: 96px;
+  --space-x: 64px;
+}
+
+.page-body {
+  background-color: var(--color-primary-medium);
 }
 
 .top-navigation {
