@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("../node_modules/modern-normalize/modern-normalize.css");
 
 :root {
   --font-family-primary: "Calistoga", sans-serif;
+  --font-family-secondary: "Inter", sans-serif;
   --color-dark: #401c10;
   --color-primary-light: #fff7eb;
   --color-primary-dark: #efe1cc;
