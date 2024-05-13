@@ -1,0 +1,7 @@
+.contact-cards-section {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-x);
+  padding: var(--py) var(--px);
+  background-color: var(--color-primary-medium);
+}
