@@ -5,11 +5,15 @@
 :root {
   --font-family-primary: "Calistoga", sans-serif;
   --font-family-secondary: "Inter", sans-serif;
+  --text: 1.125rem/1.55em var(--font-family-secondary);
+  --h1: 6rem/1.1em var(--font-family-primary);
   --color-dark: #401c10;
   --color-primary-light: #fff7eb;
   --color-primary-medium: #f5ebdc;
   --color-primary-dark: #efe1cc;
+  --color-accent: #e14725;
   --color-lighten: #fff7eb1a;
+  --color-darken: rgb(64, 28, 16, 0.1216);
   --max-width-content: 1140px;
   --px: 32px;
   --py: 96px;
