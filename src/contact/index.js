@@ -1,6 +1,7 @@
 import "./index.css";
 import PageHeader from "../components/PageHeader";
 import ContactCard from "./ContactCard";
+import Footer from "../components/Footer";
 import emailIcon from "../components/icons/email.svg";
 import phoneIcon from "../components/icons/phone.svg";
 
@@ -29,6 +30,8 @@ export default function Contact() {
     contactCardsSection.appendChild(ContactCard(contactCard));
   });
   fragment.appendChild(contactCardsSection);
+
+  fragment.appendChild(Footer());
 
   return fragment;
 }
