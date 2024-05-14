@@ -1,6 +1,7 @@
 import "./Footer.css";
 import ScrollTopButton from "./ScrollTopButton";
 import InfoCard from "./InfoCard";
+import Author from "../components/Author";
 
 function FooterLogo() {
   const footerLogo = document.createElement("div");
@@ -37,15 +38,22 @@ export default function Footer() {
   const footer = document.createElement("footer");
   footer.classList.add("footer");
 
+  const footerTop = document.createElement("div");
+  footerTop.classList.add("footer__top");
+  footer.appendChild(footerTop);
+  
+  footer.appendChild(Author());
+
   const footerWrapper = document.createElement("div");
   footerWrapper.classList.add("footer__wrapper");
-  footer.appendChild(footerWrapper);
+  footerTop.appendChild(footerWrapper);
 
   footerWrapper.appendChild(FooterLogo());
   infoCards.forEach((infoCard) => {
     footerWrapper.appendChild(InfoCard(infoCard));
   });
   footerWrapper.appendChild(ScrollTopButton());
+
 
   return footer;
 }
