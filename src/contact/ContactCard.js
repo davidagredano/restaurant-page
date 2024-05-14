@@ -1,5 +1,5 @@
 import "./ContactCard.css";
-import StaticIcon from "../components/StaticIcon";
+import StaticIcon from "../components/IconStatic";
 
 export default function ContactCard({ iconPath, iconAlt, heading, text }) {
   const contactCard = document.createElement("article");
