@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--px);
+  border-top: 1px solid var(--color-darken);
+}
+
+.footer__wrapper {
+  max-width: var(--max-width-content);
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--py) 0;
+}
+
+.footer__logo {
+  font: var(--h1);
+  color: var(--color-dark);
+}
+
+.footer__logo--accent {
+  color: var(--color-accent);
+}
