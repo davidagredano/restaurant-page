@@ -8,6 +8,7 @@
   border: 2px solid var(--color-dark);
   box-shadow: 0 3px var(--color-dark);
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .cta-button:hover {
