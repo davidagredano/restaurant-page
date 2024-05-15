@@ -17,4 +17,5 @@
 
 .author__text {
   font: 16px/1.55em var(--font-family-secondary);
+  color: var(--color-dark);
 }
