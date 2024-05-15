@@ -7,7 +7,7 @@ const homeBtn = document.querySelector("#home-btn");
 const menuBtn = document.querySelector("#menu-btn");
 const contactBtn = document.querySelector("#contact-btn");
 
-function replaceContent(component) {
+export function replaceContent(component) {
   const content = document.querySelector("#content");
   content.innerHTML = "";
   content.appendChild(component);
