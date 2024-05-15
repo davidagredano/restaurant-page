@@ -7,6 +7,7 @@
   --font-family-secondary: "Inter", sans-serif;
   --text: 1.125rem/1.55em var(--font-family-secondary);
   --h1: 6rem/1.1em var(--font-family-primary);
+  --h2: 3.75rem/1.2em var(--font-family-primary);
   --color-dark: #401c10;
   --color-primary-light: #fff7eb;
   --color-primary-medium: #f5ebdc;
@@ -47,7 +48,7 @@
   border: none;
   padding: 13px 20px;
   border-radius: 16px;
-  font: 400 1.5rem/140% var(--font-family-primary);
+  font: 400 1.5rem/1.4em var(--font-family-primary);
   letter-spacing: 0.5px;
   color: var(--color-primary-light);
   cursor: pointer;
