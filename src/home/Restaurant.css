@@ -1,0 +1,13 @@
+.restaurant {
+  display: flex;
+  justify-content: center;
+  padding: var(--py) var(--px);
+  background-color: var(--color-primary-light);
+}
+
+.restaurant__body {
+  max-width: var(--max-width-content);
+  font: 20px/1.5em var(--font-family-secondary);
+  text-align: center;
+  color: var(--color-dark);
+}
