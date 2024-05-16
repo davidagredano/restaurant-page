@@ -1,0 +1,14 @@
+.category-header {
+  display: flex;
+  justify-content: center;
+}
+
+.category-title {
+  max-width: var(--max-width-content);
+  flex: 1;
+  font: var(--h2);
+  text-align: center;
+  color: var(--color-dark);
+  margin: 0;
+  padding: 64px 0;
+}
