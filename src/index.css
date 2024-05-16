@@ -6,6 +6,7 @@
   --font-family-primary: "Calistoga", sans-serif;
   --font-family-secondary: "Inter", sans-serif;
   --text: 1.125rem/1.55em var(--font-family-secondary);
+  --nav-text: 400 1.5rem/1.4em var(--font-family-primary);
   --h1: 6rem/1.1em var(--font-family-primary);
   --h2: 3.75rem/1.2em var(--font-family-primary);
   --color-dark: #401c10;
@@ -48,9 +49,10 @@
   border: none;
   padding: 13px 20px;
   border-radius: 16px;
-  font: 400 1.5rem/1.4em var(--font-family-primary);
+  font: var(--nav-text);
   letter-spacing: 0.5px;
   color: var(--color-primary-light);
+  transition: all 0.2s;
   cursor: pointer;
 }
 
