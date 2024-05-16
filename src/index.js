@@ -1,4 +1,4 @@
-import { replaceContent } from "./utils";
+import { replaceContent, setMenuEventListeners } from "./utils";
 import Homepage from "./home";
 import Menu from "./menu";
 import Contact from "./contact";
@@ -14,6 +14,7 @@ homeBtn.addEventListener("click", () => {
 
 menuBtn.addEventListener("click", () => {
   replaceContent(Menu(), "#content");
+  setMenuEventListeners();
 });
 
 contactBtn.addEventListener("click", () => {
