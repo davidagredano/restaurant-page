@@ -1,0 +1,23 @@
+.category-nav__btn {
+  background: none;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 16px;
+  font: var(--nav-text);
+  letter-spacing: 0.5px;
+  color: var(--color-dark);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.category-nav__btn:hover {
+  background-color: var(--color-darken);
+}
+
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  padding: 24px var(--px);
+  border-bottom: 1px solid var(--color-darken);
+}
