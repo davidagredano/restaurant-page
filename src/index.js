@@ -1,3 +1,4 @@
+import { replaceContent } from "./utils";
 import Homepage from "./home";
 import Menu from "./menu";
 import Contact from "./contact";
@@ -7,22 +8,17 @@ const homeBtn = document.querySelector("#home-btn");
 const menuBtn = document.querySelector("#menu-btn");
 const contactBtn = document.querySelector("#contact-btn");
 
-export function replaceContent(component) {
-  const content = document.querySelector("#content");
-  content.innerHTML = "";
-  content.appendChild(component);
-}
-
 homeBtn.addEventListener("click", () => {
-  replaceContent(Homepage());
+  replaceContent(Homepage(), "#content");
 });
 
 menuBtn.addEventListener("click", () => {
-  replaceContent(Menu());
+  replaceContent(Menu(), "#content");
 });
 
 contactBtn.addEventListener("click", () => {
-  replaceContent(Contact());
+  replaceContent(Contact(), "#content");
 });
 
-replaceContent(Homepage());
+// initial content
+replaceContent(Homepage(), "#content");
