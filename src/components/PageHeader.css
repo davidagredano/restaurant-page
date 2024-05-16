@@ -14,7 +14,7 @@
 }
 
 .page-title {
-  font: 6rem/110% var(--font-family-primary);
+  font: var(--h1);
   color: var(--color-dark);
   margin: 0;
 }
