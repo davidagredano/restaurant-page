@@ -32,12 +32,14 @@ export function replaceContent(component, target) {
 }
 
 export function setMenuEventListeners() {
+  const categoryNav = document.querySelector(".category-nav");
   const categoryBtns = document.querySelectorAll(".category-nav__btn");
   categoryBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const category = btn.id;
       replaceContent(MenuContent(category), "#menu-main");
       setActiveNavBtn("category", btn);
+      categoryNav.scrollIntoView({ behavior: "smooth" });
     });
   });
 }
