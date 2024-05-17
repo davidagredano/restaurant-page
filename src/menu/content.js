@@ -23,15 +23,6 @@ import drinks3 from "./product-img/drinks3.png";
 export const categories = ["all", "burgers", "sides", "desserts", "drinks"];
 
 export const products = {
-  all: [
-    {
-      src: burgers1,
-      name: "Original Stack",
-      description:
-        "A double layer of juicy beef patties, topped with cheddar and a dollop of our house sauce.",
-      price: "8,99€",
-    },
-  ],
   burgers: [
     {
       src: burgers1,
