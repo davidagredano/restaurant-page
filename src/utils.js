@@ -1,5 +1,17 @@
 import MenuContent from "./menu/MenuContent";
 
+let state = {
+  activeNavBtn: null,
+};
+
+export function setActiveNavBtn(btn) {
+  if (state.activeNavBtn) {
+    state.activeNavBtn.classList.remove("active");
+  }
+  btn.classList.add("active");
+  state.activeNavBtn = btn;
+}
+
 export function replaceContent(component, target) {
   const content = document.querySelector(target);
   content.innerHTML = "";
