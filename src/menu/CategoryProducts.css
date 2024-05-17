@@ -1,5 +1,4 @@
 .product-card {
-  width: 320px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -7,9 +6,8 @@
 
 .product-card__img {
   width: 100%;
-  height: 250px;
+  height: 260px;
   object-fit: cover;
-  background-color: var(--color-darken);
 }
 
 .product-card__content {
@@ -43,9 +41,11 @@
 .product-grid {
   max-width: var(--max-width-content);
   flex: 1;
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 32px 40px;
   padding-bottom: var(--py);
 }
 
