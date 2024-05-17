@@ -14,20 +14,21 @@ const contactBtn = document.querySelector("#contact-btn");
 
 homeBtn.addEventListener("click", () => {
   replaceContent(Homepage(), "#content");
-  setActiveNavBtn(homeBtn);
+  setActiveNavBtn("main", homeBtn);
 });
 
 menuBtn.addEventListener("click", () => {
   replaceContent(Menu(), "#content");
-  setActiveNavBtn(menuBtn);
+  setActiveNavBtn("main", menuBtn);
   setMenuEventListeners();
+  setActiveNavBtn("category", document.querySelector("#all"));
 });
 
 contactBtn.addEventListener("click", () => {
   replaceContent(Contact(), "#content");
-  setActiveNavBtn(contactBtn);
+  setActiveNavBtn("main", contactBtn);
 });
 
 // initial content
 replaceContent(Homepage(), "#content");
-setActiveNavBtn(homeBtn);
+setActiveNavBtn("main", homeBtn);

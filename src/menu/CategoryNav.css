@@ -10,7 +10,8 @@
   cursor: pointer;
 }
 
-.category-nav__btn:hover {
+.category-nav__btn:hover,
+.category-nav__btn--active {
   background-color: var(--color-darken);
 }
 

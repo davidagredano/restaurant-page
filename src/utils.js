@@ -2,14 +2,23 @@ import MenuContent from "./menu/MenuContent";
 
 let state = {
   activeNavBtn: null,
+  activeCategoryNavBtn: null,
 };
 
-export function setActiveNavBtn(btn) {
-  if (state.activeNavBtn) {
-    state.activeNavBtn.classList.remove("active");
+export function setActiveNavBtn(nav, btn) {
+  if (nav === "main") {
+    if (state.activeNavBtn) {
+      state.activeNavBtn.classList.remove("nav-btn--active");
+    }
+    btn.classList.add("nav-btn--active");
+    state.activeNavBtn = btn;
+  } else if (nav === "category") {
+    if (state.activeCategoryNavBtn) {
+      state.activeCategoryNavBtn.classList.remove("category-nav__btn--active");
+    }
+    btn.classList.add("category-nav__btn--active");
+    state.activeCategoryNavBtn = btn;
   }
-  btn.classList.add("active");
-  state.activeNavBtn = btn;
 }
 
 export function replaceContent(component, target) {
@@ -28,6 +37,7 @@ export function setMenuEventListeners() {
     btn.addEventListener("click", () => {
       const category = btn.id;
       replaceContent(MenuContent(category), "#menu-main");
+      setActiveNavBtn("category", btn);
     });
   });
 }
