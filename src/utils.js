@@ -12,7 +12,6 @@ export function replaceContent(component, target) {
 
 export function setMenuEventListeners() {
   const categoryBtns = document.querySelectorAll(".category-nav__btn");
-  console.log(categoryBtns);
   categoryBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const category = btn.id;
