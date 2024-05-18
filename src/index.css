@@ -62,3 +62,16 @@
 .nav-btn--active:hover {
   background-color: var(--color-lighten);
 }
+
+.modal {
+  border-radius: 16px;
+  padding: 32px 32px 40px;
+  font: var(--text);
+  color: var(--color-dark);
+  background-color: var(--color-primary-medium);
+  border: 2px solid var(--color-dark);
+}
+
+.modal::backdrop {
+  backdrop-filter: blur(5px) grayscale(50%);
+}
