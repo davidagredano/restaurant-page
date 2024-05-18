@@ -2,6 +2,8 @@ import {
   replaceContent,
   setMenuEventListeners,
   setActiveNavBtn,
+  getPageMinWidth,
+  createModal,
 } from "./utils";
 import Homepage from "./home";
 import Menu from "./menu";
@@ -29,6 +31,18 @@ contactBtn.addEventListener("click", () => {
   setActiveNavBtn("main", contactBtn);
 });
 
+window.addEventListener("resize", function () {
+  const minWidth = getPageMinWidth();
+  const width = window.innerWidth;
+  const modal = document.querySelector(".modal");
+  if (width < minWidth && !modal.open) {
+    modal.showModal();
+  } else if (width >= minWidth && modal.open) {
+    modal.close();
+  }
+});
+
 // initial content
 replaceContent(Homepage(), "#content");
 setActiveNavBtn("main", homeBtn);
+createModal();

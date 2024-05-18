@@ -1,4 +1,6 @@
 import MenuContent from "./menu/MenuContent";
+import CardWithIcon from "./components/CardWithIcon";
+import resizeIcon from "./components/icons/resize.svg";
 
 let state = {
   activeNavBtn: null,
@@ -46,4 +48,30 @@ export function setMenuEventListeners() {
 
 export function capitalize(str) {
   return str[0].toUpperCase() + str.slice(1);
+}
+
+export function getPageMinWidth() {
+  const body = document.querySelector(".page-body");
+  const styles = getComputedStyle(body);
+  const minWidth = parseInt(styles.minWidth);
+  return minWidth;
+}
+
+export function createModal() {
+  const content = {
+    iconPath: resizeIcon,
+    iconAlt: "Arrow pointing both directions",
+    heading: "Oops! Tiny Screen Alert",
+    text: [
+      "Looks like you're using a small screen. " +
+        "Our site isn't optimized for this size yet. " +
+        "For the best experience, please switch to a larger device. " +
+        "Thanks for understanding!",
+    ],
+  };
+
+  const modal = document.createElement("dialog");
+  modal.classList.add("modal");
+  modal.appendChild(CardWithIcon(content));
+  document.body.appendChild(modal);
 }
