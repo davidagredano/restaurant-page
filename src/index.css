@@ -56,11 +56,8 @@
   cursor: pointer;
 }
 
-.nav-btn:hover {
-  background-color: var(--color-lighten);
-}
-
+.nav-btn:hover,
 .nav-btn--active,
 .nav-btn--active:hover {
-  background-color: var(--color-accent);
+  background-color: var(--color-lighten);
 }
