@@ -46,6 +46,7 @@
 }
 
 .nav-btn {
+  position: relative;
   background: none;
   border: none;
   padding: 13px 20px;
@@ -55,12 +56,39 @@
   color: var(--color-primary-light);
   transition: all 0.2s;
   cursor: pointer;
+  z-index: 1;
 }
 
-.nav-btn:hover,
-.nav-btn--active,
-.nav-btn--active:hover {
+.nav-btn:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 70%;
+  height: 60%;
+  border-radius: 10px;
+  content: "";
+  background: var(--color-lighten);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover:after {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+}
+
+.nav-btn--active {
   background-color: var(--color-lighten);
+}
+
+.nav-btn--active:hover:after {
+  opacity: 0;
 }
 
 .modal {
