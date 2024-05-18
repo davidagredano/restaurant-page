@@ -1,6 +1,6 @@
 import "./index.css";
 import PageHeader from "../components/PageHeader";
-import ContactCard from "./ContactCard";
+import CardWithIcon from "../components/CardWithIcon";
 import Footer from "../components/Footer";
 import emailIcon from "../components/icons/email.svg";
 import phoneIcon from "../components/icons/phone.svg";
@@ -27,7 +27,7 @@ export default function Contact() {
   const contactCardsSection = document.createElement("section");
   contactCardsSection.classList.add("contact-cards-section");
   contactCards.forEach((contactCard) => {
-    contactCardsSection.appendChild(ContactCard(contactCard));
+    contactCardsSection.appendChild(CardWithIcon(contactCard));
   });
   fragment.appendChild(contactCardsSection);
 
