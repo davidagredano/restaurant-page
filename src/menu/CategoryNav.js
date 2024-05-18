@@ -4,7 +4,7 @@ import { capitalize } from "../utils";
 
 function NavButton(label) {
   const button = document.createElement("button");
-  button.classList.add("category-nav__btn");
+  button.classList.add("nav-btn", "nav-btn--light");
   button.id = label.toLowerCase();
   button.textContent = label;
   return button;

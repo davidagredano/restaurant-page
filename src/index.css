@@ -59,6 +59,10 @@
   z-index: 1;
 }
 
+.nav-btn--light {
+  color: var(--color-dark);
+}
+
 .nav-btn:after {
   position: absolute;
   top: 0;
@@ -76,6 +80,10 @@
   transition: all 0.2s;
 }
 
+.nav-btn--light:after {
+  background: var(--color-darken);
+}
+
 .nav-btn:hover:after {
   opacity: 1;
   height: 100%;
@@ -87,7 +95,12 @@
   background-color: var(--color-lighten);
 }
 
-.nav-btn--active:hover:after {
+.nav-btn--light--active {
+  background-color: var(--color-darken);
+}
+
+.nav-btn--active:hover:after,
+.nav-btn--light--active:hover:after {
   opacity: 0;
 }
 

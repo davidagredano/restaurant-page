@@ -16,9 +16,9 @@ export function setActiveNavBtn(nav, btn) {
     state.activeNavBtn = btn;
   } else if (nav === "category") {
     if (state.activeCategoryNavBtn) {
-      state.activeCategoryNavBtn.classList.remove("category-nav__btn--active");
+      state.activeCategoryNavBtn.classList.remove("nav-btn--light--active");
     }
-    btn.classList.add("category-nav__btn--active");
+    btn.classList.add("nav-btn--light--active");
     state.activeCategoryNavBtn = btn;
   }
 }
@@ -35,7 +35,7 @@ export function replaceContent(component, target) {
 
 export function setMenuEventListeners() {
   const categoryNav = document.querySelector(".category-nav");
-  const categoryBtns = document.querySelectorAll(".category-nav__btn");
+  const categoryBtns = document.querySelectorAll(".nav-btn--light");
   categoryBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const category = btn.id;
