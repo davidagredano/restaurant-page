@@ -1,16 +1,40 @@
 .cta-button {
+  position: relative;
   border-radius: 16px;
   padding: 16px 48px;
   font: 20px var(--font-family-primary);
   letter-spacing: 0.5px;
   color: var(--color-primary-light);
   background-color: var(--color-accent);
-  border: 2px solid var(--color-dark);
-  box-shadow: 0 3px var(--color-dark);
+  border: none;
   cursor: pointer;
   transition: all 0.2s;
 }
 
-.cta-button:hover {
-  background-color: #d73f1d;
+.cta-button:after {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  margin: auto;
+  width: 70%;
+  height: 60%;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "Explore Our Menu";
+  background-color: var(--color-accent);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.cta-button:hover:after {
+  opacity: 1;
+  top: -5%;
+  left: -2.5%;
+  margin: auto;
+  width: 105%;
+  height: 110%;
+  border-radius: 18px;
+  background-color: #eb5230;
 }

@@ -1,6 +1,10 @@
 import "./CTAButton.css";
 import Menu from "../menu";
-import { replaceContent, setMenuEventListeners } from "../utils.js";
+import {
+  replaceContent,
+  setMenuEventListeners,
+  setActiveNavBtn,
+} from "../utils.js";
 
 export default function CTAButton() {
   const button = document.createElement("button");
@@ -9,6 +13,7 @@ export default function CTAButton() {
   button.addEventListener("click", () => {
     replaceContent(Menu(), "#content");
     setMenuEventListeners();
+    setActiveNavBtn("category", document.querySelector("#all"));
   });
 
   return button;
