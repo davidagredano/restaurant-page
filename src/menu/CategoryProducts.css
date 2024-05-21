@@ -47,6 +47,7 @@
   grid-template-columns: repeat(auto-fill, 350px);
   gap: 32px 40px;
   padding-bottom: var(--py);
+  animation: fade-in 0.75s ease 0.2s, hide 0.2s;
 }
 
 .category-products {

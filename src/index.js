@@ -9,6 +9,7 @@ import Homepage from "./home";
 import Menu from "./menu";
 import Contact from "./contact";
 import "./index.css";
+import "./transitions.css";
 
 const homeBtn = document.querySelector("#home-btn");
 const menuBtn = document.querySelector("#menu-btn");

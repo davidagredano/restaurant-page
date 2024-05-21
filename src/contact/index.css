@@ -4,4 +4,5 @@
   gap: var(--space-x);
   padding: var(--py) var(--px);
   background-color: var(--color-primary-medium);
+  animation: fade-in 0.75s ease 0.2s, hide 0.2s;
 }
