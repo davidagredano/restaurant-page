@@ -12,6 +12,7 @@ export default function CTAButton() {
   button.textContent = "Explore Our Menu";
   button.addEventListener("click", () => {
     replaceContent(Menu(), "#content");
+    setActiveNavBtn("main", document.querySelector("#menu-btn"));
     setMenuEventListeners();
     setActiveNavBtn("category", document.querySelector("#all"));
   });
