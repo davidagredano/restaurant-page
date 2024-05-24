@@ -4,6 +4,7 @@ import {
   setActiveNavBtn,
   getPageMinWidth,
   createModal,
+  checkWindowSize,
 } from "./utils";
 import Homepage from "./home";
 import Menu from "./menu";
@@ -14,6 +15,8 @@ import "./transitions.css";
 const homeBtn = document.querySelector("#home-btn");
 const menuBtn = document.querySelector("#menu-btn");
 const contactBtn = document.querySelector("#contact-btn");
+const modal = createModal();
+const minWidth = getPageMinWidth();
 
 homeBtn.addEventListener("click", () => {
   replaceContent(Homepage(), "#content");
@@ -32,18 +35,9 @@ contactBtn.addEventListener("click", () => {
   setActiveNavBtn("main", contactBtn);
 });
 
-window.addEventListener("resize", function () {
-  const minWidth = getPageMinWidth();
-  const width = window.innerWidth;
-  const modal = document.querySelector(".modal");
-  if (width < minWidth && !modal.open) {
-    modal.showModal();
-  } else if (width >= minWidth && modal.open) {
-    modal.close();
-  }
-});
+window.addEventListener("resize", () => checkWindowSize(minWidth, modal));
 
 // initial content
 replaceContent(Homepage(), "#content");
 setActiveNavBtn("main", homeBtn);
-createModal();
+checkWindowSize(minWidth, modal);

@@ -74,4 +74,15 @@ export function createModal() {
   modal.classList.add("modal");
   modal.appendChild(CardWithIcon(content));
   document.body.appendChild(modal);
+
+  return modal;
+}
+
+export function checkWindowSize(minWidth, modal) {
+  const width = window.innerWidth;
+  if (width < minWidth && !modal.open) {
+    modal.showModal();
+  } else if (width >= minWidth && modal.open) {
+    modal.close();
+  }
 }
